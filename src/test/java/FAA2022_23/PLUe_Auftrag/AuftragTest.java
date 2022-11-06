@@ -17,13 +17,32 @@ class AuftragTest {
         a2.setZiel(null);
         a3.setZiel("");
 
-        assertAll(() -> assertEquals("test", a1.getZiel()),
+        assertAll(
+                () -> assertEquals("test", a1.getZiel()),
                 () -> assertEquals("nicht bekannt", a2.getZiel()),
-                () -> assertEquals("", a3.getZiel()));
-
-
+                () -> assertEquals("", a3.getZiel())
+        );
     }
 
+    @Test
+    @DisplayName("Test setVolumen")
+    public void testSetVolumen() {
+        Auftrag a1 = new Auftrag();
+        Auftrag a2 = new Auftrag();
+        Auftrag a3 = new Auftrag();
+        Auftrag a4 = new Auftrag();
 
+        a1.setVolumen(-1);
+        a2.setVolumen(0);
+        a3.setVolumen(10000);
+        a4.setVolumen(10001);
+
+        assertAll(
+                () -> assertEquals(-1, a1.getVolumen()),
+                () -> assertEquals(0, a2.getVolumen()),
+                () -> assertEquals(10000, a3.getVolumen()),
+                () -> assertEquals(10001, a4.getVolumen())
+        );
+    }
 
 }
