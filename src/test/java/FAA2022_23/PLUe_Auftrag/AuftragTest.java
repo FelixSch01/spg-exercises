@@ -20,8 +20,22 @@ class AuftragTest {
         assertAll(() -> assertEquals("test", a1.getZiel()),
                 () -> assertEquals("nicht bekannt", a2.getZiel()),
                 () -> assertEquals("", a3.getZiel()));
+    }
 
+    @Test
+    @DisplayName("Test setKosten")
+    public void testSetKosten() {
+        Auftrag a1 = new Auftrag();
+        Auftrag a2 = new Auftrag();
+        Auftrag a3 = new Auftrag();
 
+        a1.setKosten(50);
+        a2.setKosten(0);
+        a3.setKosten(-1);
+
+        assertAll(() -> assertEquals(50, a1.getKosten()),
+                () -> assertEquals(0, a2.getKosten()),
+                () -> assertEquals(0, a3.getKosten()));
     }
 
 
