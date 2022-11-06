@@ -35,9 +35,10 @@ class AuftragTest {
         a2.setKosten(0);
         a3.setKosten(-1);
 
-        assertAll(() -> assertEquals(50, a1.getKosten()),
-                () -> assertEquals(0, a2.getKosten()),
-                () -> assertEquals(0, a3.getKosten()));
+        assertAll(  () -> assertEquals(50, a1.getKosten()),
+                    () -> assertEquals(0, a2.getKosten()),
+                    () -> assertEquals(0, a3.getKosten())
+        );
     }
 
     @Test
