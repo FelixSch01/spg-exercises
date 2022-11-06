@@ -71,13 +71,13 @@ public class Auftrag {
     }
 
     public void printAuftrag() {
-        System.out.println(String.format("""
+        System.out.printf"""
                 Auftragsinfos
                 =============
                 Ziel: %s
                 Volumen: %d
                 Erledigt: %
-                """, ziel, volumen, erledigt));
+                """, ziel, volumen, erledigt);
     }
 
 
