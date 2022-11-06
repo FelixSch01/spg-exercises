@@ -29,6 +29,7 @@ public class Auftrag {
             this.ziel = "nicht bekannt";
         }
     }
+
     public void setVolumen(int volumen) {
         if(volumen >= 0 && volumen <= 10000) {
             this.volumen = volumen;
@@ -36,6 +37,16 @@ public class Auftrag {
         else {
             System.out.println("Fehler bei setVolumen(): Wert muss mindestens 0 und darf maximal 10000 sein.");
             this.volumen = 0;
+        }
+    }
+
+    public void setKosten(int kosten){
+        if (kosten < 0) {
+            this.kosten = 0;
+            System.out.println(String.format("Der Wert von 'kosten' muss mindestens 0 sein, war aber %d", kosten));
+        }
+        else {
+            this.kosten = kosten;
         }
     }
     public void setErledigt(boolean erledigt) {
@@ -46,11 +57,17 @@ public class Auftrag {
     public String getZiel() {
         return ziel;
     }
+
     public int getVolumen() {
         return volumen;
     }
+
     public boolean isErledigt() {
         return erledigt;
+    }
+
+    public int getKosten() {
+        return kosten;
     }
 
     public void printAuftrag() {
@@ -63,13 +80,5 @@ public class Auftrag {
                 """, ziel, volumen, erledigt));
     }
 
-    public void setKosten(int kosten){
-        if (kosten < 0) {
-            this.kosten = 0;
-            System.out.println(String.format("Der Wert von 'kosten' muss mindestens 0 sein, war aber %d", kosten));
-        }
-        else {
-            this.kosten = kosten;
-        }
-    }
+
 }
