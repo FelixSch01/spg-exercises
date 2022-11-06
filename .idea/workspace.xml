@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73c5a679-0109-4f25-8b56-5e0a2011afd6" name="Changes" comment="initialize project" />
+    <list default="true" id="73c5a679-0109-4f25-8b56-5e0a2011afd6" name="Changes" comment="initialize project">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,7 +55,7 @@
       <option name="presentableId" value="Default" />
       <updated>1667748128807</updated>
       <workItem from="1667748131472" duration="649000" />
-      <workItem from="1667748807088" duration="338000" />
+      <workItem from="1667748807088" duration="660000" />
     </task>
     <task id="LOCAL-00001" summary="initialize project">
       <created>1667748885216</created>
@@ -90,7 +92,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667749073466</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="initialize project">
+      <created>1667749305066</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1667749305066</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

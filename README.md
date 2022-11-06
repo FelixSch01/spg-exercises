@@ -1,0 +1,1 @@
+This project is a collection of programming exercises we did at HTL Spengergasse
