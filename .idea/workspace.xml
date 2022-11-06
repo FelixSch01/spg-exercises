@@ -4,26 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73c5a679-0109-4f25-8b56-5e0a2011afd6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/A03_Beamer/A-03_Beamer.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/A05_Kopierer/A-05_Kopierer.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/A07_Taxifahrt/A-07_Taxifahrt.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/A10_Mitarbeiter/A-10_Mitarbeiter.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/A11_EisenbahnWaggon/A-11_EisenbahnWaggon.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/A12_Anhaenger/A-12 Anhaenger.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/A13_Zug/A-13_Zug.pdf" afterDir="false" />
-    </list>
+    <list default="true" id="73c5a679-0109-4f25-8b56-5e0a2011afd6" name="Changes" comment="initialize project" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,14 +27,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/felix/Documents/Spengergasse/spg-exercises/src/main/java/A13_Zug"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/felix/Documents/Spengergasse/spg-exercises/src/main/java/A13_Zug&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/A13_Zug" />
@@ -72,7 +53,44 @@
       <option name="presentableId" value="Default" />
       <updated>1667748128807</updated>
       <workItem from="1667748131472" duration="649000" />
+      <workItem from="1667748807088" duration="338000" />
     </task>
+    <task id="LOCAL-00001" summary="initialize project">
+      <created>1667748885216</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1667748885216</updated>
+    </task>
+    <task id="LOCAL-00002" summary="initialize project">
+      <created>1667748899262</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1667748899262</updated>
+    </task>
+    <task id="LOCAL-00003" summary="initialize project">
+      <created>1667748996528</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1667748996528</updated>
+    </task>
+    <task id="LOCAL-00004" summary="initialize project">
+      <created>1667749001948</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1667749001948</updated>
+    </task>
+    <task id="LOCAL-00005" summary="initialize project">
+      <created>1667749073466</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1667749073466</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -88,5 +106,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initialize project" />
+    <option name="LAST_COMMIT_MESSAGE" value="initialize project" />
   </component>
 </project>
