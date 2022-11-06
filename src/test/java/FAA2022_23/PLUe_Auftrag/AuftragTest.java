@@ -35,7 +35,8 @@ class AuftragTest {
         a2.setKosten(0);
         a3.setKosten(-1);
 
-        assertAll(() -> assertEquals(50, a1.getKosten()),
+        assertAll(
+                () -> assertEquals(50, a1.getKosten()),
                 () -> assertEquals(0, a2.getKosten()),
                 () -> assertEquals(0, a3.getKosten())
         );
@@ -73,4 +74,32 @@ class AuftragTest {
                 () -> assertEquals(0, a2.provision())
         );
     }
+
+    @Test
+    @DisplayName("Test gewinn")
+    public void testGewinn() {
+        Auftrag a1 = new Auftrag();
+        Auftrag a2 = new Auftrag();
+        Auftrag a3 = new Auftrag();
+
+        a1.setErledigt(false);
+        a1.setVolumen(500);
+        a1.setKosten(200);
+
+        a2.setErledigt(true);
+        a2.setVolumen(500);
+        a2.setKosten(200);
+        a2.setZiel("Profit");
+
+        a3.setErledigt(true);
+        a3.setVolumen(500);
+        a3.setKosten(0);
+
+        assertAll(
+                () -> assertEquals(0, a1.gewinn()),
+                () -> assertEquals(200, a2.gewinn()),
+                () -> assertEquals(500, a3.gewinn())
+        );
+    }
+
 }
