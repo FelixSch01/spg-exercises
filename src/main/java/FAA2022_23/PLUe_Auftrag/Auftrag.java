@@ -80,5 +80,14 @@ public class Auftrag {
                 """, ziel, volumen, erledigt);
     }
 
-
+    public int gewinn() {
+        int gewinn = 0;
+        if (erledigt) {
+            gewinn = volumen - kosten - provision();
+            System.out.printf("Gewinn: %d", gewinn);
+        }
+        else
+            System.out.println("Kein Gewinn, Auftrag nicht erledigt");
+        return gewinn;
+    }
 }
