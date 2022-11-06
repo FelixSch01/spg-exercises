@@ -4,6 +4,7 @@ public class Auftrag {
     private String ziel; // Ziel des Auftrags
     private int volumen; // Volumen in EUR
     private boolean erledigt; // Ob der Auftrag erledigt ist
+    private int kosten;
 
     // ------- ctor ----------
     public Auftrag() {
@@ -60,5 +61,15 @@ public class Auftrag {
                 Volumen: %d
                 Erledigt: %
                 """, ziel, volumen, erledigt));
+    }
+
+    public void setKosten(int kosten){
+        if (kosten < 0) {
+            this.kosten = 0;
+            System.out.println(String.format("Der Wert von 'kosten' muss mindestens 0 sein, war aber %d", kosten));
+        }
+        else {
+            this.kosten = kosten;
+        }
     }
 }
