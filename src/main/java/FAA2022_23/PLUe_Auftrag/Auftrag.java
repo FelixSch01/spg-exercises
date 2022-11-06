@@ -80,5 +80,11 @@ public class Auftrag {
                 """, ziel, volumen, erledigt));
     }
 
+    // ------ methoden ----------
+    public int provision() {
+        int provision = volumen / 100 * 20;
+        System.out.println(String.format("20% Provision: %d", provision));
+        return provision;
+    }
 
 }
