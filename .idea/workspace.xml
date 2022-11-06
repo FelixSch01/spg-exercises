@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73c5a679-0109-4f25-8b56-5e0a2011afd6" name="Changes" comment="initialize project">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="73c5a679-0109-4f25-8b56-5e0a2011afd6" name="Changes" comment="update .gitignore">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +55,7 @@
       <option name="presentableId" value="Default" />
       <updated>1667748128807</updated>
       <workItem from="1667748131472" duration="649000" />
-      <workItem from="1667748807088" duration="660000" />
+      <workItem from="1667748807088" duration="982000" />
     </task>
     <task id="LOCAL-00001" summary="initialize project">
       <created>1667748885216</created>
@@ -99,7 +99,21 @@
       <option name="project" value="LOCAL" />
       <updated>1667749305066</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add README.md">
+      <created>1667749491974</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1667749491974</updated>
+    </task>
+    <task id="LOCAL-00008" summary="update .gitignore">
+      <created>1667749630494</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1667749630494</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,6 +132,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initialize project" />
-    <option name="LAST_COMMIT_MESSAGE" value="initialize project" />
+    <MESSAGE value="add README.md" />
+    <MESSAGE value="update .gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="update .gitignore" />
   </component>
 </project>
