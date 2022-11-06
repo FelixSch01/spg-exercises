@@ -77,7 +77,7 @@ public class Auftrag {
                 =============
                 Ziel: %s
                 Volumen: %d
-                Erledigt: %
+                Erledigt: %s
                 """, ziel, volumen, erledigt);
     }
 
