@@ -43,7 +43,7 @@ public class Auftrag {
     public void setKosten(int kosten){
         if (kosten < 0) {
             this.kosten = 0;
-            System.out.println(String.format("Der Wert von 'kosten' muss mindestens 0 sein, war aber %d", kosten));
+            System.out.printf("Der Wert von 'kosten' muss mindestens 0 sein, war aber %d", kosten);
         }
         else {
             this.kosten = kosten;
@@ -70,14 +70,21 @@ public class Auftrag {
         return kosten;
     }
 
+    // ------ methoden ----------
     public void printAuftrag() {
-        System.out.printf"""
+        System.out.printf("""
                 Auftragsinfos
                 =============
                 Ziel: %s
                 Volumen: %d
                 Erledigt: %
                 """, ziel, volumen, erledigt);
+    }
+
+    public int provision() {
+        int provision = volumen / 100 * 20;
+        System.out.println(String.format("20% Provision: %d", provision));
+        return provision;
     }
 
     public int gewinn() {
