@@ -83,8 +83,14 @@ public class Auftrag {
 
     public int provision() {
         int provision = volumen / 100 * 20;
-        System.out.println(String.format("20% Provision: %d", provision));
-        return provision;
+        if(ziel.equals("nicht bekannt")) {
+            System.out.println(String.format("20% Provision: %d", provision));
+            return provision;
+        }
+        else {
+            System.out.println("Keine Provision, Ziel des Auftrags nicht bekannt.");
+            return 0;
+        }
     }
 
     public int gewinn() {
