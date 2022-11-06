@@ -81,10 +81,10 @@ public class Auftrag {
                 """, ziel, volumen, erledigt);
     }
 
-    public int provision() {
-        int provision = volumen / 100 * 20;
-        if(ziel.equals("nicht bekannt")) {
-            System.out.println(String.format("20% Provision: %d", provision));
+    public double provision() {
+        double provision = (double)volumen * 0.2;
+        if(!ziel.equals("nicht bekannt")) {
+            System.out.printf("20%% Provision: %f", provision);
             return provision;
         }
         else {
@@ -93,11 +93,11 @@ public class Auftrag {
         }
     }
 
-    public int gewinn() {
-        int gewinn = 0;
+    public double gewinn() {
+        double gewinn = 0;
         if (erledigt) {
-            gewinn = volumen - kosten - provision();
-            System.out.printf("Gewinn: %d", gewinn);
+            gewinn = (double)volumen - ((double)kosten + provision());
+            System.out.printf("Gewinn: %f", gewinn);
         }
         else
             System.out.println("Kein Gewinn, Auftrag nicht erledigt");
