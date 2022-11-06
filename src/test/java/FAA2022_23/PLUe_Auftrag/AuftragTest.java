@@ -35,9 +35,9 @@ class AuftragTest {
         a2.setKosten(0);
         a3.setKosten(-1);
 
-        assertAll(  () -> assertEquals(50, a1.getKosten()),
-                    () -> assertEquals(0, a2.getKosten()),
-                    () -> assertEquals(0, a3.getKosten())
+        assertAll(() -> assertEquals(50, a1.getKosten()),
+                () -> assertEquals(0, a2.getKosten()),
+                () -> assertEquals(0, a3.getKosten())
         );
     }
 
@@ -62,4 +62,15 @@ class AuftragTest {
         );
     }
 
+    @Test
+    @DisplayName("Test provision()")
+    public void testProvision() {
+        Auftrag a1 = new Auftrag("Test", 420, false);
+        Auftrag a2 = new Auftrag();
+
+        assertAll(
+                () -> assertEquals(84, a1.provision()),
+                () -> assertEquals(0, a2.provision())
+        );
+    }
 }
