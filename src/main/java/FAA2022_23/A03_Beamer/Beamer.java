@@ -26,7 +26,7 @@ public class Beamer {
 
     public void setRestzeit(double restzeit) {
         double adjusted_restzeit = this.restzeit + restzeit;
-        if (adjusted_restzeit < 1000.0 && adjusted_restzeit > 0)
+        if (adjusted_restzeit <= 1000.0 && adjusted_restzeit > 0)
             this.restzeit = adjusted_restzeit;
     }
 
