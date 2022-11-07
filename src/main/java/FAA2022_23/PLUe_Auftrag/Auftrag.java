@@ -43,7 +43,7 @@ public class Auftrag {
     public void setKosten(int kosten){
         if (kosten < 0) {
             this.kosten = 0;
-            System.out.printf("Der Wert von 'kosten' muss mindestens 0 sein, war aber %d", kosten);
+            System.out.printf("Der Wert von 'kosten' muss mindestens 0 sein, war aber %d%s", kosten, System.lineSeparator());
         }
         else {
             this.kosten = kosten;
@@ -84,7 +84,7 @@ public class Auftrag {
     public double provision() {
         double provision = (double)volumen * 0.2;
         if(!ziel.equals("nicht bekannt")) {
-            System.out.printf("20%% Provision: %f", provision);
+            System.out.printf("20%% Provision: %f%s", provision, System.lineSeparator());
             return provision;
         }
         else {
@@ -97,7 +97,7 @@ public class Auftrag {
         double gewinn = 0;
         if (erledigt) {
             gewinn = (double)volumen - ((double)kosten + provision());
-            System.out.printf("Gewinn: %f", gewinn);
+            System.out.printf("Gewinn: %f%s", gewinn, System.lineSeparator());
         }
         else
             System.out.println("Kein Gewinn, Auftrag nicht erledigt");
