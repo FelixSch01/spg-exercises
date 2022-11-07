@@ -16,7 +16,8 @@ public class Beamer {
     }
 
     public void setRaum(String raum) {
-        this.raum = raum;
+        if (raum != null && raum.length() > 0)
+            this.raum = raum;
     }
 
     public double getRestzeit() {
@@ -24,7 +25,9 @@ public class Beamer {
     }
 
     public void setRestzeit(double restzeit) {
-        this.restzeit = restzeit;
+        double adjusted_restzeit = this.restzeit + restzeit;
+        if (adjusted_restzeit < 1000.0 && adjusted_restzeit > 0)
+            this.restzeit = adjusted_restzeit;
     }
 
     // methods
@@ -41,9 +44,7 @@ public class Beamer {
     }
 
     public void reparieren() {
-        double adjusted_restzeit = restzeit + 50;
-        if (adjusted_restzeit < 1000.0)
-            restzeit = adjusted_restzeit;
+        setRestzeit(restzeit + 50);
     }
 
     public void runterwerfen() {
