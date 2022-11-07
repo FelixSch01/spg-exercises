@@ -25,9 +25,8 @@ public class Beamer {
     }
 
     public void setRestzeit(double restzeit) {
-        double adjusted_restzeit = this.restzeit + restzeit;
-        if (adjusted_restzeit <= 1000.0 && adjusted_restzeit > 0)
-            this.restzeit = adjusted_restzeit;
+        if (restzeit <= 1000.0 && restzeit > 0)
+            this.restzeit = restzeit;
     }
 
     // methods
@@ -55,7 +54,7 @@ public class Beamer {
         return String.format("""
                 Eingeschaltet: %s
                 Raum:          %s
-                Restzeit:      %b
+                Restzeit:      %f
                 """, eingeschaltet, raum, restzeit);
     }
 }
