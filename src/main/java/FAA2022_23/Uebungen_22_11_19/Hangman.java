@@ -1,5 +1,7 @@
 package FAA2022_23.Uebungen_22_11_19;
 
+import com.sun.source.tree.DefaultCaseLabelTree;
+
 import static java.lang.Character.toLowerCase;
 
 public class Hangman {
@@ -12,10 +14,12 @@ public class Hangman {
 
     // private String wordList = "Starwars Spengergasse ..."
 
-    private final String wantedWord;
+    private final String DEFAULT = "spengergasse";
+    private String wantedWord;
     private final StringBuilder guessedWord;
     private final StringBuilder guessedCharacters;
     private int faults;
+    private int corrects;
     private final int MAX_FAULTS = 7;
 
     enum GAME_STATE {
@@ -26,7 +30,7 @@ public class Hangman {
         // TODO verify wantedWord (not null, at least n characters)
         String stars = "*".repeat(wantedWord.length());
 
-        this.wantedWord = wantedWord.toLowerCase();
+        this.wantedWord = Ensurer.ensureNotNullNotBlank(wantedWord.toLowerCase(), DEFAULT);
         this.guessedWord = new StringBuilder(stars);
         this.guessedCharacters = new StringBuilder();
         this.faults = 0;
@@ -36,7 +40,7 @@ public class Hangman {
         if (faults >= MAX_FAULTS)
             return GAME_STATE.LOST;
 
-        if (wantedWord.equals(guessedWord.toString()))
+        if (wantedWord.equals(guessedWord))
             return GAME_STATE.WON;
 
         return GAME_STATE.KEEP_PLAYING;
@@ -146,7 +150,7 @@ public class Hangman {
               |   |
               O   |
               |   |
-             /|   |
+                  |
                   |
             =========
                   """;
@@ -157,8 +161,8 @@ public class Hangman {
               +---+
               |   |
               O   |
-              |   |
-             /|\\  |
+             /|   |
+                  |
                   |
             =========
                   """;
@@ -169,8 +173,8 @@ public class Hangman {
               +---+
               |   |
               O   |
-              |   |
              /|\\  |
+                  |
                   |
             =========
                   """;
@@ -181,9 +185,9 @@ public class Hangman {
               +---+
               |   |
               O   |
-              |   |
              /|\\  |
              /    |
+                  |
             =========
                   """;
     }
@@ -193,9 +197,9 @@ public class Hangman {
               +---+
               |   |
               O   |
-              |   |
              /|\\  |
              / \\  |
+                  |
             =========
                   """;
     }
